@@ -26,6 +26,14 @@ all running in CI with GitHub Actions:
 **88 automated tests** and **12 documented bugs** — including security issues (passwords exposed in a JWT,
 in API responses and in the admin UI), a broken mobile menu and a customer reaching the admin area.
 
+## Integration testing: billing that never runs twice
+
+| Project | Layer | Stack | Highlights |
+|---|---|---|---|
+| [erp-billing-integration-tests](https://github.com/patrick-aguiar-qa/erp-billing-integration-tests) | Queue → worker → ERP integration | Mocha · Supertest · Chai · JSON Schema | 74 tests · worker crashes, ERP timeouts after commit and redeliveries never create a second invoice · negative controls prove each safeguard is needed · 98% coverage |
+
+Inspired by my 2026 work as a QA consultant on an ERP billing automation project. The domain and data are fictional.
+
 ## Tools
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
