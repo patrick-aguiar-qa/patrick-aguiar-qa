@@ -44,3 +44,7 @@ in API responses and in the admin UI), a broken mobile menu and a customer reach
 3. Design the checks with formal techniques, then explore what the requirements do not say.
 4. Automate what repeats, so every change gets fast feedback in the pipeline.
 5. Report what I find with evidence, impact and a clear recommendation.
+
+## Contact
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-patrick--aguiar--qa-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patrick-aguiar-qa)
