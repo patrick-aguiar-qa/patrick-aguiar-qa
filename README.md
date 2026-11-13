@@ -7,24 +7,26 @@ Open to **remote QA roles (LATAM)** · Fluent English · Based in Brazil.
 
 - **Test design:** equivalence partitioning, boundary value analysis, decision tables and exploratory testing (charters, SBTM)
 - **API testing:** Postman and automated suites in JavaScript (Mocha, Supertest, Chai), guided by the VADER heuristic
-- **Web E2E automation:** Cypress with custom commands, fixtures, API-based test data and HTML reports
+- **Web E2E automation:** Playwright with TypeScript (typed fixtures, page objects, network mocking, Chromium/Firefox/mobile) and Cypress (custom commands, API-based test data, HTML reports)
 - **Performance testing:** k6 with NFRs as thresholds (p95/p99), load, stress and spike profiles
 - **Accessibility and responsiveness:** axe-core (WCAG), mobile and tablet viewports
 - **Agile teams:** refinement, Jira, Gherkin scenarios, clear bug reports with severity and priority, Git and pull requests
 
 ## Portfolio: end-to-end quality of one product
 
-Three projects testing the same e-commerce ([ServeRest](https://github.com/ServeRest/ServeRest)) at different layers,
-all running in CI with GitHub Actions:
+Four projects testing the same e-commerce ([ServeRest](https://github.com/ServeRest/ServeRest)) at different layers
+and with different tools, all running in CI with GitHub Actions:
 
 | Project | Layer | Stack | Highlights |
 |---|---|---|---|
 | [serverest-api-tests](https://github.com/patrick-aguiar-qa/serverest-api-tests) | REST API | Mocha · Supertest · Chai | 53 tests · auth/authorization, data validation, boundary values · 3 bugs reported |
 | [serverest-web-cypress](https://github.com/patrick-aguiar-qa/serverest-web-cypress) | Web UI | Cypress · axe-core | 35 tests · sessions, calculations, accessibility, responsiveness · 9 bugs reported |
+| [serverest-playwright-ts](https://github.com/patrick-aguiar-qa/serverest-playwright-ts) | API + Web UI | Playwright · TypeScript | 70 tests on Chromium, Firefox and mobile · typed fixtures, page objects, network mocking · 2 new bugs, including a race condition traced from a flaky test |
 | [serverest-k6-performance](https://github.com/patrick-aguiar-qa/serverest-k6-performance) | Performance | k6 | Smoke, load, stress and spike · found the spike where p99 breaks the 1 s target |
 
-**88 automated tests** and **12 documented bugs** — including security issues (passwords exposed in a JWT,
-in API responses and in the admin UI), a broken mobile menu and a customer reaching the admin area.
+**158 automated tests** and **14 documented bugs** — including security issues (passwords exposed in a JWT,
+in API responses and in the admin UI), a race condition where a slow response overwrites the search results,
+a broken mobile menu and a customer reaching the admin area.
 
 ## Integration testing: billing that never runs twice
 
@@ -37,6 +39,8 @@ Inspired by my 2026 work as a QA consultant on an ERP billing automation project
 ## Tools
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white)
 ![Cypress](https://img.shields.io/badge/Cypress-69D3A7?logo=cypress&logoColor=black)
 ![k6](https://img.shields.io/badge/k6-7D64FF?logo=k6&logoColor=white)
 ![Mocha](https://img.shields.io/badge/Mocha-8D6748?logo=mocha&logoColor=white)
